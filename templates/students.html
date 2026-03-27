@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>students database</title>
+</head>
+<body>
+<h2> Student lists </h2>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>NAME</th>
+    </tr>
+    {% for s in students %}
+    <tr>
+        <td>{{ s[0] }}</td>
+        <td>{{ s[1] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+<br>
+<a href="/">Add More</a>
+</body>
+</html>
